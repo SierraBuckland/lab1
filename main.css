@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* CSS Document
+SIERRA BUCKLAND - 200366619
+13/01/2020
+*/
+
+/* Your mission - replicate the visual styles in the jpeg provided using CSS advanced selectors and the HTML document provide. You CANNOT use simple type selectors, classes or Ids!
+use:
+- attribute selectors
+- pseudo class / pseudo element
+- Combinators (descendant and direct)
+- general / direct siblings
+*/
+
+/* background color */
+body > div {
+  background-color: orange;
+}
+
+/* margin */
+html > body > div {
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+/* padding and font */
+body > div {
+  font-family: 'Cute Font', sans-serif;
+  font-size: 1.8em;
+  height: 100%;
+  padding: 25px;
+}
+
+/* top and bottom padding on paragraphs */
+h3 ~ p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main > section > p:last-child {
+  padding-bottom: 40px;
+}
+
+/* first-letter uppercase */
+h3 ~ p::first-letter {
+  font-size: 3.5em;
+}
+
+/* second paragraph text */
+h3 ~ p {
+  color: purple;
+}
+
+h3 + p {
+  color: black;
+}
+
+/* em text */
+p > em {
+  color: green;
+  font-size: 2em;
+}
+
+/* list */
+ul li{
+  font-size: 0.9em;
+}
+
+ul li:nth-child(odd) {
+  text-decoration: underline;
+}
+
+ul li em {
+  color: green;
+  font-size: 1.8em;
+}
+
+ul li:nth-child(4) {
+  color: yellow;
+  font-size: 2em;
+}
+/* footer */
+div > footer{
+  color: white;
+}
